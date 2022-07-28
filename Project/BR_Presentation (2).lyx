@@ -1,0 +1,1367 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\setbeamercovered{transparent = 10}
+\usefonttheme{professionalfonts}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+An Overview of 
+\begin_inset Newline newline
+\end_inset
+
+PPAS Sampling Scheme
+\end_layout
+
+\begin_layout Author
+Rajdeep Datta 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ Niranjan Dey
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+presentation
+\end_layout
+
+\end_inset
+
+Contents
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing other 0.1
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Introduction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Firstly, we have 
+\begin_inset Formula $n$
+\end_inset
+
+ samples 
+\begin_inset Formula $(x_{1},y_{1}),(x_{2},y_{2}),\ldots,(x_{n},y_{n})$
+\end_inset
+
+ of the Paired variable 
+\begin_inset Formula $(X,Y)$
+\end_inset
+
+ from a Population of Size 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+The ratio estimator is :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\widehat{R}=\frac{\overline{y}}{\overline{x}}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+where, 
+\begin_inset Formula $\overline{y}=\frac{1}{n}{\displaystyle \sum_{i=1}^{n}}y_{i},\overline{x}=\frac{1}{n}{\displaystyle \sum_{i=1}^{n}}x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Now, Ratio estimate of population total 
+\begin_inset Formula $Y$
+\end_inset
+
+ is :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Y_{R}=\frac{\overline{y}}{\overline{x}}X
+\]
+
+\end_inset
+
+, 
+\begin_inset Newline newline
+\end_inset
+
+where 
+\begin_inset Formula $X={\displaystyle \sum_{i=1}^{N}X_{i}}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+=Population Total of X-values.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Why PPAS?
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why PPAS?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We are here to 
+\series bold
+find a Probability allocation
+\series default
+ by which we can Unbaisedly Estimate 
+\begin_inset Formula $R=\frac{Y}{X}=\frac{{\displaystyle \sum_{i=1}^{N}}Y_{i}}{{\displaystyle \sum_{i=1}^{N}}X_{i}}$
+\end_inset
+
+ by 
+\begin_inset Formula $\widehat{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+So, we will change 
+\begin_inset Formula $P=$
+\end_inset
+
+Probability allocation in the Sampling Design 
+\begin_inset Formula $(U,S,P)$
+\end_inset
+
+, where 
+\begin_inset Formula $U=$
+\end_inset
+
+Population, 
+\begin_inset Formula $S=$
+\end_inset
+
+Sample Space.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\bar under
+Methods of Probability allocation
+\series default
+ we already know is:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+SRSWOR: 
+\series default
+This is the most simple method by which we allocate equal probabilities
+ to all the samples i.e.
+ equally likely allotment.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}Cov(\widehat{R},\bar{x}) & =E(\widehat{R}\bar{x})-E(\widehat{R})E(\bar{x})\\
+ & =E(\frac{\overline{y}}{\overline{x}}\bar{x})-E(\widehat{R})\bar{X}=\overline{Y}-E(\widehat{R})\bar{X}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why PPAS?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So, we have
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}E(\widehat{R}) & =\frac{\text{\overline{Y}}}{\text{\overline{X}}}-\frac{Cov(\widehat{R},\bar{x})}{\overline{X}}\\
+ & =R-\frac{Cov(\widehat{R},\bar{x})}{\overline{X}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+which is not unbiased.
+ To make it unbaised we have Hartly-Ross estimator:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\widehat{R}_{UE} & =\begin{aligned}\overline{r}-\widehat{B(\overline{r})}\end{aligned}
+=\overline{r}+\frac{\hat{Cov}(r_{j},x_{j})}{\overline{X}}\\
+ & =\overline{r}+\frac{n}{n-1}(N-1)(\overline{y}-\overline{r}\overline{x})
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{ where }\overline{r}=\frac{1}{n}{\displaystyle \sum_{i=1}^{n}}r_{i}=\frac{1}{n}{\displaystyle \sum_{i=1}^{n}}\frac{y_{i}}{x_{i}},r_{j}=\frac{y_{j}}{x_{j}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why PPAS?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+PPS: 
+\series default
+In this method we give more probability to the unit that has greater size.
+ So it is called Probability Proportional to Size (PPS) sampling scheme.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+For PPSWR the expressions for 
+\begin_inset Formula $V(\widehat{X}),V(\widehat{Y}),cov(\widehat{X},\widehat{Y})$
+\end_inset
+
+are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(\widehat{X})=\frac{1}{n}({\displaystyle \sum_{i=1}^{N}\frac{X_{i}^{2}}{P_{i}}-X^{2}}),V(\widehat{Y})=\frac{1}{n}({\displaystyle \sum_{i=1}^{N}\frac{Y_{i}^{2}}{P_{i}}-Y^{2}})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $cov(\widehat{X},\widehat{Y})=\frac{1}{n}({\displaystyle \sum_{i=1}^{N}\frac{X_{i}Y_{i}}{P_{i}}-XY})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Where, 
+\begin_inset Formula $P_{i}=$
+\end_inset
+
+Inclution probability of ith population unit.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why PPAS?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Which is again not unbaised.
+ Expression of bias of 
+\begin_inset Formula $\widehat{R}$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}B(\widehat{R}) & =\frac{1}{\overline{X}}(RV(\widehat{X})-Cov(\widehat{X},\widehat{Y}))\\
+ & =\frac{1}{nX^{2}}({\displaystyle \sum_{i=1}^{N}\frac{X_{i}}{P_{i}}(RX_{i}-Y_{i})})
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PPAS
+\series default
+: Now we shall see in Probability Proportional to Aggregative Size (PPAS)
+ Sampling the probability of selecting a sample will be proportional to
+ the aggregative size (total size).
+ This method will make 
+\begin_inset Formula $\widehat{R}=\frac{\overline{y}}{\overline{x}}$
+\end_inset
+
+ to be unbaised for 
+\begin_inset Formula $R=\frac{Y}{X}$
+\end_inset
+
+ i.e.
+ 
+\begin_inset Formula $E_{PPAS}(\widehat{R})=R$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+PPAS Sampling Method
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Method of PPAS Sampling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Now, we will see what is the method PPAS Sampling.
+ 
+\end_layout
+
+\begin_layout Itemize
+Let us denote the probability alloted to a sample 's' to be 
+\begin_inset Formula $P(s)$
+\end_inset
+
+, where 
+\begin_inset Formula $s\in S$
+\end_inset
+
+ is the sample space.
+\end_layout
+
+\begin_layout Itemize
+Then the sampling design is given by 
+\begin_inset Formula $(s,P(s),s\in S)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Now, the ratio estimator is given by 
+\begin_inset Formula $\widehat{Y}_{R}=\widehat{R_{S}}X,$
+\end_inset
+
+where 
+\begin_inset Formula $\hat{R}_{S}=\frac{\hat{Y}_{s}}{\hat{X}_{s}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Here, 
+\begin_inset Formula $\hat{Y}_{s}$
+\end_inset
+
+ & 
+\begin_inset Formula $\hat{X}_{s}$
+\end_inset
+
+ are unbiased estimators of 
+\begin_inset Formula $Y$
+\end_inset
+
+ & 
+\begin_inset Formula $X$
+\end_inset
+
+ respectively.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Expression of 
+\begin_inset Formula $\hat{X}_{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+E
+\emph default
+xpression of 
+\begin_inset Formula $\hat{X}_{s}$
+\end_inset
+
+ (sample estimate of aggregate size):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}E(\hat{X_{s}}) & =X=\sum_{i=1}^{N}X_{i}\\
+ & =N\overline{X}=N.E(\overline{x})\\
+\Rightarrow\widehat{X_{s}} & =N\overline{x}=N(\frac{1}{n}\sum_{i=1}^{n}x_{i})
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Simillarly for 
+\begin_inset Formula $\widehat{Y_{s}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Method of PPAS Sampling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Now, 
+\begin_inset Formula $E_{P}(\hat{R}_{S})\neq R$
+\end_inset
+
+ i.e.
+ it is a biased estimator.
+\end_layout
+
+\begin_layout Itemize
+To get an unbiased estimator, we modify the sampling design as (s, P(s),
+ s
+\begin_inset Formula $\in$
+\end_inset
+
+S) where 
+\begin_inset Formula $P'(s)\propto P(s)\hat{X}_{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This sampling design is called Probability proportional to aggregative size
+ (PPAS) sampling design.
+\end_layout
+
+\begin_layout Itemize
+Now, 
+\begin_inset Formula $\sum_{s\in S}P'(s)=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies\sum_{s\in S}kP(s)\hat{X}_{s}=1,$
+\end_inset
+
+
+\begin_inset Formula $k$
+\end_inset
+
+ being the constant of proportionality
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies k\sum_{s\in S}P(s)\hat{X}_{s}=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies kE_{P}(\hat{X)}=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies kX=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies k=\frac{1}{X}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Expression of 
+\begin_inset Formula $P'(s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Expression of 
+\begin_inset Formula $P'(s)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}P'(s) & =\frac{1}{X}P(s)\hat{X}_{s}\\
+ & =\frac{1}{X}.\frac{1}{\binom{N}{n}}.(N(\frac{1}{n}\sum_{i=1}^{n}x_{i}))\\
+ & =\frac{\sum_{i=1}^{n}x_{i}}{X.\binom{N-1}{n-1}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This is the changed inclusion probability of the sample 
+\begin_inset Formula $s$
+\end_inset
+
+ in sample space 
+\begin_inset Formula $S$
+\end_inset
+
+ under 
+\series bold
+PPAS
+\series default
+ sampling scheme.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Method of PPAS Sampling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Under this new sampling design, 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $E_{P'}(\hat{R}_{s})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=\sum_{s\in S}\hat{R}_{s}P'(s)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=\sum_{s\in S}\frac{\hat{Y}_{s}}{\hat{X}_{s}}.\frac{1}{X}.P(s).\hat{X}(s)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=\frac{1}{X}.Y$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=R$
+\end_inset
+
+ for all 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Thus, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\hat{R}_{s}$
+\end_inset
+
+becomes unbiased for 
+\begin_inset Formula $R$
+\end_inset
+
+ under 
+\begin_inset Formula $P'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+So, finally we have an method of probability allocation by which 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\hat{R}_{s}$
+\end_inset
+
+becomes unbiased for 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Method of PPAS Sampling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}E_{P'}(\hat{Y}_{R}) & =E_{P'}(\hat{R}_{S}X)\\
+ & =\sum_{s\in S}X\frac{\sum y_{i}}{\sum x_{i}}.\frac{\sum x_{i}}{X.\binom{N-1}{n-1}}\\
+ & =RX\\
+ & =Y\text{ for all }Y
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Hence, 
+\begin_inset Formula $\hat{Y}_{R}$
+\end_inset
+
+beomes unbiased for 
+\begin_inset Formula $Y$
+\end_inset
+
+ under 
+\begin_inset Formula $P'$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sampling Method of PPAS Samples
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sampling Method of PPAS Samples
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In PPAS, first unit is selected using PPS, and the remaining 
+\begin_inset Formula $n-1$
+\end_inset
+
+ units are selected using simple random sampling without replacement from
+ the remaining 
+\begin_inset Formula $N-1$
+\end_inset
+
+ population units.
+\end_layout
+
+\begin_layout Itemize
+Now, we will see how to perform PPAS Sampling.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Midzuno's Scheme:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Draw one unit from N units of the population U such that the initial probability
+ is 
+\begin_inset Formula $P_{i}=\frac{X_{i}}{X}$
+\end_inset
+
+ i.e.
+ using PPS sampling.
+\end_layout
+
+\begin_layout Itemize
+Select remaining 
+\begin_inset Formula $n-1$
+\end_inset
+
+ units from the remaining 
+\begin_inset Formula $N-1$
+\end_inset
+
+ units by SRSWOR scheme.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Lahiri's Method:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Take M 
+\begin_inset Formula $\geq$
+\end_inset
+
+ max{
+\begin_inset Formula ${\displaystyle \sum_{j\in s}x_{j}:s\in S}$
+\end_inset
+
+} (sum of the n largest values of 
+\begin_inset Formula $x$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Select a sample of size n by SRSWOR.
+ Let s is the selected sample.
+\end_layout
+
+\begin_layout Itemize
+Now, draw a random number R from 1 to M.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If 
+\begin_inset Formula $R\leq\sum_{j\in s}x_{j},$
+\end_inset
+
+then select the sample.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $R>\sum_{j\in s}x_{j},$
+\end_inset
+
+then select no sample and repeat the process.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Acknowledgement 
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Acknowledgement
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+We would like to express our 
+\series bold
+special thanks of gratitude 
+\series default
+to our respected 
+\series bold
+Prof.
+
+\series default
+ 
+\series bold
+Biswajit Roy 
+\series default
+for for giving us this wonderful opportunity to showcase our presentation
+ as we learned many things during the making of this presentation.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
